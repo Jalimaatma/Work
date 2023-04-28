@@ -1,3 +1,4 @@
+/*
 // console.log("Hellow world");
 
 // function combine (firstname, Surname){
@@ -37,3 +38,8 @@ const dict = {
 
 }
 console.log(dict.aurora);
+*/
+
+// var a = prompt("Enter Your Age:")
+// console.log(a);
+// alert("You are ${a} years old")

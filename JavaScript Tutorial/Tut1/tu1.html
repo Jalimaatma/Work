@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="tu1.js"></script>
+    <textarea id="comment"></textarea>
+<button onclick="showComment()">Submit</button>
+
+<script>
+function showComment() {
+  const comment = document.getElementById("comment").value;
+  alert("Your comment: " + comment);
+}
+</script>
+
+
 </body>
 </html>
