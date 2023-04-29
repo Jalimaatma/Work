@@ -3,9 +3,14 @@
     padding: 0;
 
 }
+body{
+    background-color: blue;
+
+}
 
 #box{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    color: white;
     height: 50vh;
     flex-direction: column;
     display: flex;

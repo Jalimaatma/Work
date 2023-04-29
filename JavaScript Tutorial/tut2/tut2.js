@@ -4,6 +4,8 @@
  
 
 const Time = ()=> {
+    // create current time and date by the Date() function
+
     var now = new Date();
     var year = now.getFullYear();
     var month = now.getMonth();
@@ -12,11 +14,21 @@ const Time = ()=> {
     var minutes = now.getMinutes();
     var secondes = now.getSeconds();
 
-    var todaysdate = date + "-" +month +"-" + year ;
-    var currenttime = hours+ ":"+minutes+":"+ secondes ;
 
-    document.getElementById("time").innerHTML = currenttime;
-    document.getElementById("date").innerHTML = todaysdate;
+    // hours= 0;
+    // convert 24 hours to 12 hours formate
+    var AMPM = hours >=12 ? "PM":"AM" ;
+    hours = hours % 12 ;
+    hours = hours? hours:12;
+
+
+    // creat time and date string
+
+    var todaysdate = date + "-" +month +"-" + year ;
+    var currenttime = hours+ ":"+minutes+":"+ secondes +":"+ AMPM ;
+
+    document.getElementById("time").innerText = currenttime;
+    document.getElementById("date").innerText = todaysdate;
 
 }
 
